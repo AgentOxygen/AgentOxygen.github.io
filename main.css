@@ -1,0 +1,102 @@
+body {
+	background-color:#FAF9F6
+	font-family: "Neue Montreal";
+	font-weight: 600;
+	font-size: 14px;
+}
+a {
+	color: black;
+	font-weight: bolder;
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+img {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#canvas {
+    border: 2px solid black;
+	position: absolute;
+	background-color:#FAF9F6;
+	top: 5px;
+	left: 5px;
+	z-index: -1;
+}
+#page_title {
+	font-size: 48px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 20px;
+	line-height: 50px;
+}
+#page_subtitle {
+	font-size: 18px;
+	padding-top: 0;
+	padding-left: 30px;
+	line-height: 20px;
+}
+#page_menu {
+	padding-top: 10px;
+	padding-left: 40px;
+}
+#info_section {
+	display: block;
+}
+#projects_section {
+	display: none;
+}
+#resume_section {
+	display: none;
+}
+#contact_section {
+	display: none;
+}
+#credits_section {
+	position: absolute;
+	bottom:20;
+    left:20;
+	display: block;
+}
+#github_img {
+	width: 50px;
+}
+#ut_logo_img{
+	padding-left: 10px;
+	width: 120px;
+}
+#linkedin_badge{
+	padding-top: 10px;
+}
+.project_title {
+	font-size: 30px;
+	padding-bottom: 20px;
+}
+.section_text {
+	position: absolute;
+	top: 200;
+	left: 450;
+	width: 50%;
+	font-size: 16px;
+}
+.btn{
+	font-weight: 600;
+	--bs-btn-border-width: 0px;  
+}
+.btn:hover {
+	font-weight: bolder;
+}
+.btn:focus {
+	font-weight: bolder;
+}
+.btn:active {
+	outline: none !important;
+}
+.canvas-container{
+	position: relative;
+	height: 100%;
+}
