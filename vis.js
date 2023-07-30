@@ -1,13 +1,41 @@
-console.log("Visualization script loaded.");
+const full_url = window.location.href;
+const base_url = full_url.split("#")[0];
+const page = full_url.split("#")[1];
 
-function changePage(page_id){
+
+function changePage(page_id) {
+	
 	document.getElementById('info_section').style.display = "none";
 	document.getElementById('projects_section').style.display = "none";
 	document.getElementById('resume_section').style.display = "none";
 	document.getElementById('contact_section').style.display = "none";
 	
-	document.getElementById(page_id).style.display = "block";
+	switch(page_id) {
+		case 'info':
+			document.getElementById('info_section').style.display = "block";
+			
+			window.history.pushState({}, "Cameron Cummins", base_url + "#info");
+			break;
+		case 'projects':
+			document.getElementById('projects_section').style.display = "block";
+			
+			window.history.pushState({}, "Cameron Cummins", base_url + "#projects");
+			console.log(document.getElementById('projects_btn'));
+			break;
+		case 'resume':
+			document.getElementById('resume_section').style.display = "block";
+			window.history.pushState({}, "Cameron Cummins", base_url + "#resume");
+			break;
+		case 'contact':
+			document.getElementById('contact_section').style.display = "block";
+			window.history.pushState({}, "Cameron Cummins", base_url + "#contact");
+			break;
+		default:
+			document.getElementById('info_section').style.display = "block";
+			window.history.pushState({}, "Cameron Cummins", base_url + "#info");
+	}
 }
+changePage(page);
 
 var canvas = document.getElementById('canvas', willReadFrequently=true);
 var ctx = canvas.getContext('2d', { willReadFrequently: true });
@@ -183,3 +211,5 @@ function loop(timestamp) {
 }
 var lastRender = 0;
 window.requestAnimationFrame(loop);
+
+console.log("Visualization script loaded.");

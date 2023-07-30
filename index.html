@@ -30,25 +30,25 @@
 			</div>
 		</nav>
 		<div class="collapse" id="navbar_menu">
-			<ul class="bg-light shadow-3 py-2 px-3">
-				<li class="btn btn-link btn-block m-0 p-2 text-start text-dark">Info</li>
-				<li class="btn btn-link btn-block m-0 p-2 text-start text-dark">Projects</li>
-				<li class="btn btn-link btn-block m-0 p-2 text-start text-dark">Resume & CV</li>
-				<li class="btn btn-link btn-block m-0 p-2 text-start text-dark">Contact</li>
-			</ul>
+			<div class="bg-light">
+				<button id="info_nav_btn" class="btn" onclick="changePage('info')"> Info </button>
+				<button id="projects_nav_btn" class="btn" onclick="changePage('projects')"> Projects </button>
+				<button id="resume_nav_btn" class="btn" onclick="changePage('resume')"> Resume & CV </button>
+				<button id="contact_nav_btn" class="btn" onclick="changePage('contact')"> Contact </button>
+			</div>
 		</div>
 				
 		<p id="page_title">Cameron Cummins</p>
 		<p id="page_subtitle">Climate Scientist and Computational Engineer</p>
 		
 		<p id="page_menu">
-			<button class="btn" autofocus="autofocus" onclick="changePage('info_section')">Info</button>
+			<button id="info_btn" class="btn" autofocus="autofocus" onclick="changePage('info')">Info</button>
 			<br>
-			<button class="btn" autofocus="autofocus" onclick="changePage('projects_section')">Projects</button>
+			<button id="projects_btn" class="btn" autofocus="autofocus" onclick="changePage('projects')">Projects</button>
 			<br>
-			<button class="btn" autofocus="autofocus" onclick="changePage('resume_section')">Resume & CV</button>
+			<button id="resume_btn" class="btn" autofocus="autofocus" onclick="changePage('resume')">Resume & CV</button>
 			<br>
-			<button class="btn" autofocus="autofocus" onclick="changePage('contact_section')">Contact</button>
+			<button id="contact_btn" class="btn" autofocus="autofocus" onclick="changePage('contact')">Contact</button>
 		</p>
 		<section id="info_section">
 			<p class="section_text">
