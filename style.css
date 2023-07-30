@@ -1,8 +1,16 @@
+html {
+  width:  100%;
+  height: 100%;
+  margin: 0;
+}
 body {
 	background-color:#FAF9F6
 	font-family: "Neue Montreal";
 	font-weight: 600;
 	font-size: 14px;
+	width:  100%;
+	height: 100%;
+	margin: 0;
 }
 a {
 	color: black;
@@ -44,6 +52,18 @@ img {
 	padding-top: 10px;
 	padding-left: 40px;
 }
+#navbar_title {
+	font-size: 28px;
+}
+#navbar_subtitle {
+	font-size: 18px;
+}
+#navbar_btn{
+	background-image: url('menu.svg');
+	background-repeat: no-repeat;
+	width: 3rem;
+	height: 3rem;
+}
 #info_section {
 	display: block;
 }
@@ -58,19 +78,38 @@ img {
 }
 #credits_section {
 	position: absolute;
-	bottom:20;
-    left:20;
+	bottom:3%;
+    left:1%;
+	padding-right: 5%;
 	display: block;
 }
 #github_img {
-	width: 50px;
+	width: 5%;
 }
 #ut_logo_img{
 	padding-left: 10px;
-	width: 120px;
+	width: 20%;
 }
-#linkedin_badge{
+#linkedin_badge {
 	padding-top: 10px;
+}
+#mobile_navbar{
+	display: none;
+	z-index: 2;
+}
+#navbar_menu{
+	z-index:2;
+	position: absolute;
+}
+#navbar_subtitle{
+	right: 0px;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 .project_title {
 	font-size: 30px;
@@ -78,10 +117,12 @@ img {
 }
 .section_text {
 	position: absolute;
-	top: 200;
-	left: 450;
-	width: 50%;
+	top: 20%;
+	left: 20%;
+	width: 70%;
+	height: 50%;
 	font-size: 16px;
+	overflow: auto;
 }
 .btn{
 	font-weight: 600;
@@ -99,4 +140,43 @@ img {
 .canvas-container{
 	position: relative;
 	height: 100%;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 880px) {
+	#page_menu {
+		display: none;
+	}
+	#mobile_navbar{
+		display: block;
+	}
+	#credits_section {
+		left:15px;
+	}
+	#page_title {
+		display: none;
+	}
+	#page_subtitle {
+		display: none;
+	}
+	.section_text{
+		top: 25%;
+		height: 70%;
+	}
+	.dropdown-item{
+		font-size: 16px;
+	}
+}
+@media (max-width: 400px) {
+	#navbar_subtitle{
+		font-size: 16px;
+	}
 }
