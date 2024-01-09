@@ -104,12 +104,28 @@ img {
 #navbar_subtitle{
 	right: 0px;
 }
+#old_updates_btn{
+	position: absolute;
+	padding-top: 20px;
+	padding-left: 50px;
+}
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
+}
+.thesis_post_title {
+	font-size: 30px;
+	padding-bottom: 5px;
+}
+.thesis_post_date {
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+.thesis_post_text {
+	font-size: 16px;
 }
 .project_title {
 	font-size: 30px;
@@ -120,6 +136,7 @@ img {
 	top: 20%;
 	left: 20%;
 	width: 70%;
+	height: 70%;
 	font-size: 16px;
 	overflow-y: auto
 }

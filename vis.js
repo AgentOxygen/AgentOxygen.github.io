@@ -9,6 +9,7 @@ function changePage(page_id) {
 	document.getElementById('projects_section').style.display = "none";
 	document.getElementById('resume_section').style.display = "none";
 	document.getElementById('contact_section').style.display = "none";
+	document.getElementById('thesis_section').style.display = "none";
 	
 	switch(page_id) {
 		case 'info':
@@ -16,11 +17,15 @@ function changePage(page_id) {
 			
 			window.history.pushState({}, "Cameron Cummins", base_url + "#info");
 			break;
+		case 'thesis':
+			document.getElementById('thesis_section').style.display = "block";
+			
+			window.history.pushState({}, "Cameron Cummins", base_url + "#thesis");
+			break;
 		case 'projects':
 			document.getElementById('projects_section').style.display = "block";
 			
 			window.history.pushState({}, "Cameron Cummins", base_url + "#projects");
-			console.log(document.getElementById('projects_btn'));
 			break;
 		case 'resume':
 			document.getElementById('resume_section').style.display = "block";
@@ -35,7 +40,20 @@ function changePage(page_id) {
 			window.history.pushState({}, "Cameron Cummins", base_url + "#info");
 	}
 }
+console.log(page);
 changePage(page);
+
+function changeThesisUpdate(update_id) {
+	switch(update_id) {
+		case 'index':
+			document.getElementById('updates_embed').src = "thesis_updates_index.html";
+			break;
+		default:
+			document.getElementById('updates_embed').src = "thesis_updates_index.html";
+			break;
+	}
+	
+}
 
 var canvas = document.getElementById('canvas', willReadFrequently=true);
 var ctx = canvas.getContext('2d', { willReadFrequently: true });
@@ -46,8 +64,6 @@ var flow_lat_length = flow_vector_field[0][0].length;
 
 var x_ratio = flow_lon_length / (window.innerWidth - 25);
 var y_ratio = flow_lat_length / (window.innerHeight - 25);
-
-console.log([flow_time_length, flow_lon_length, flow_lat_length]);
 
 var frame_delay = 1000; // Time in seconds between frames
 
