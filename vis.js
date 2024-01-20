@@ -2,6 +2,17 @@ const full_url = window.location.href;
 const base_url = full_url.split("#")[0];
 const page = full_url.split("#")[1];
 
+function changeThesisUpdate(update_id) {
+	switch(update_id) {
+		case 'index':
+			document.getElementById('updates_embed').src = "thesis_updates_index.html";
+			break;
+		default:
+			document.getElementById('updates_embed').src = "thesis_updates_index.html";
+			break;
+	}
+	
+}
 
 function changePage(page_id) {
 	
@@ -19,6 +30,7 @@ function changePage(page_id) {
 			break;
 		case 'thesis':
 			document.getElementById('thesis_section').style.display = "block";
+			changeThesisUpdate();
 			
 			window.history.pushState({}, "Cameron Cummins", base_url + "#thesis");
 			break;
@@ -42,18 +54,6 @@ function changePage(page_id) {
 }
 console.log(page);
 changePage(page);
-
-function changeThesisUpdate(update_id) {
-	switch(update_id) {
-		case 'index':
-			document.getElementById('updates_embed').src = "thesis_updates_index.html";
-			break;
-		default:
-			document.getElementById('updates_embed').src = "thesis_updates_index.html";
-			break;
-	}
-	
-}
 
 var canvas = document.getElementById('canvas', willReadFrequently=true);
 var ctx = canvas.getContext('2d', { willReadFrequently: true });

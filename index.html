@@ -32,7 +32,6 @@
 		<div class="collapse" id="navbar_menu">
 			<div class="bg-light">
 				<button id="info_nav_btn" class="btn" onclick="changePage('info')"> Info </button>
-				<button id="thesis_nav_btn" class="btn" onclick="changePage('thesis')"> Master's Thesis </button>
 				<button id="projects_nav_btn" class="btn" onclick="changePage('projects')"> Projects </button>
 				<button id="resume_nav_btn" class="btn" onclick="changePage('resume')"> Resume & CV </button>
 				<button id="contact_nav_btn" class="btn" onclick="changePage('contact')"> Contact </button>
@@ -44,8 +43,6 @@
 		
 		<p id="page_menu">
 			<button id="info_btn" class="btn" autofocus="autofocus" onclick="changePage('info')">Info</button>
-			<br>
-			<button id="thesis_nav_btn" class="btn" autofocus="autofocus" onclick="changePage('thesis')">Master's Thesis</button>
 			<br>
 			<button id="projects_btn" class="btn" autofocus="autofocus" onclick="changePage('projects')">Projects</button>
 			<br>
@@ -98,6 +95,8 @@
 		
 		<section id="thesis_section">
 			<div>
+				<button id="thesis_nav_btn" class="btn" onclick="changePage('thesis')"> Thesis Blog </button> 
+				<br>
 				<button id="old_updates_btn" class="btn" autofocus="autofocus" onclick="changeThesisUpdate('index')">See past updates.</button>
 				<embed id="updates_embed" type="text/html" src="thesis_updates/thesis_update_0.html" class="section_text">
 			</div>

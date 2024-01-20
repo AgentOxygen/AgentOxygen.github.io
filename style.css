@@ -109,6 +109,10 @@ img {
 	padding-top: 20px;
 	padding-left: 50px;
 }
+#thesis_nav_btn{
+	position: absolute;
+	padding-left: 50px;
+}
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
