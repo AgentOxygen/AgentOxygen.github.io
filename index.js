@@ -22,7 +22,7 @@ anime.timeline()
     opacity: [0,1],
     easing: "easeOutExpo",
     duration: 1200,
-    delay: (el, i) => 500 + 30 * i
+    delay: (el, i) => 500 + 40 * i
   });
 anime.timeline().add({
     targets: '.title_menu_icon',

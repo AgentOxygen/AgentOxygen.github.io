@@ -40,8 +40,8 @@ body {
 }
 
 .title_menu_icon {
-	width: 100px;
-	height: 100px;
+	width: 7%;
+	height: 7%;
 	padding-left: 2%;
 	padding-right: 2%;
 }
@@ -51,8 +51,8 @@ body {
 }
 
 .title_name {
-	font-weight: 200;
-	font-size: 3.7em;
+	font-weight: 400;
+	font-size: 300%;
 	letter-spacing: 0.3em;
 	width: 100%;
 	margin-bottom: 15%;
@@ -74,4 +74,24 @@ body {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	overflow: auto;
+}
+
+/*
+	Mobile configuration
+*/
+@media (max-width:800px){
+	.title_name {
+		font-size: 150%;
+		margin-bottom: 95%;
+	}
+	
+	.title_menu_icon {
+		width: 80px;
+		height: 80px;
+		padding: 20%;
+	}
+	#title_menu {
+		width: 40%;
+		margin-top: 30%;
+	}
 }
