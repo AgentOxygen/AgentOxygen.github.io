@@ -1,111 +1,61 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<title>Cameron Cummins</title>
+    <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="flow_data.js"></script>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <title>Cameron Cummins</title>
+		<script src="heat_data.js"></script>
+		<script src="node_modules/animejs/lib/anime.min.js"></script>
+		<script src="node_modules/rellax/rellax.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 		<link rel="stylesheet" href="style.css">
-	</head>
-  <body>
-	<div class="canvas-container">
+    </head>
+    <body>
 		<canvas id="canvas" width="100" height="50"></canvas>
+		<div id="big_container"><div id="container">
 		
-		<nav id="mobile_navbar" class="navbar navbar-light bg-light">
-			<div class="container-fluid">
-				<button
-					id="navbar_btn"
-					class="navbar-toggler shadow-none"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbar_menu"
-					aria-controls="navbar_menu"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-				>
-				</button>
-				<p id="navbar_title">Cameron Cummins</p>
-				<p id="navbar_subtitle"> Climate Scientist and Computational Engineer </p>
-			</div>
-		</nav>
-		<div class="collapse" id="navbar_menu">
-			<div class="bg-light">
-				<button id="info_nav_btn" class="btn" onclick="changePage('info')"> Info </button>
-				<button id="projects_nav_btn" class="btn" onclick="changePage('projects')"> Projects </button>
-				<button id="resume_nav_btn" class="btn" onclick="changePage('resume')"> Resume & CV </button>
-				<button id="contact_nav_btn" class="btn" onclick="changePage('contact')"> Contact </button>
-			</div>
+
+		<h1 class="title_name" id="title_name">Cameron Cummins</h1>
+		<div id="title_menu">
+			<a href="https://www.jsg.utexas.edu/student/cameron_cummins"><img class="title_menu_icon" src="assets/ut_seal.svg"></img></a>
+			<a href="https://github.com/AgentOxygen"><img class="title_menu_icon" src="assets/github-mark.svg"></img></a>
+			<a href="https://www.linkedin.com/in/cameron-cummins-5a5930179/"><img class="title_menu_icon" src="assets/LI-Bug.svg.original.svg"></img></a>
 		</div>
-				
-		<p id="page_title">Cameron Cummins</p>
-		<p id="page_subtitle">Climate Scientist and Computational Engineer</p>
 		
-		<p id="page_menu">
-			<button id="info_btn" class="btn" autofocus="autofocus" onclick="changePage('info')">Info</button>
-			<br>
-			<button id="projects_btn" class="btn" autofocus="autofocus" onclick="changePage('projects')">Projects</button>
-			<br>
-			<button id="resume_btn" class="btn" autofocus="autofocus" onclick="changePage('resume')">Resume & CV</button>
-			<br>
-			<button id="contact_btn" class="btn" autofocus="autofocus" onclick="changePage('contact')">Contact</button>
-		</p>
-		<section id="info_section">
+		<section class="section">
+			<section class="section_title">The standard Lorem Ipsum passage, used since the 1500s</section>
 			<p class="section_text">
-				Alumn and graduate student at the University of Texas at Austin. Since joining the <a href="https://www.ggpersad.com/">Persad Aero-Climate Lab</a> 
-				in late 2020 as an undergraduate, I developed a passion for studying the Earth climate system by analyzing the output from global climate simulations 
-				like the <a href="https://www.cesm.ucar.edu/">Community Earth System Model (CESM)</a>. Now as a graduate research assistant, I continue to develop
-				software solutions for computing the various forms of risk and hazard climate change poses to communities around the world. My main area of research
-				is in quantifying the effects of anthropogenic aerosol and methane emissions on atmospheric-driven disasters such as heatwaves and floods.
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 			</p>
 		</section>
-		<section id="projects_section">
-			<div class="section_text">
-				<a href="https://github.com/AgentOxygen/heatwave_analysis_package"><div class="project_title">Master's Thesis: Heatwave Diagnostics Package in Python</div></a>
-				</br>
-				<a href="#"><div class="project_title">Quantifying the Effect of Anthropogenic Aerosols on Patterns of Heatwave Hazard and Exposure (Pending Publication)</div></a>
-				</br>
-				<a href="#"><div class="project_title">Collaboration with the Environmental Defense Fund: Impact of Methane-Mitigation Policies on Heatwave Trends (Pending Completion)</div></a>
-				</br>
-				<a href="#"><div class="project_title">Big Data Analysis Workshop using Jupyter Labs (Pending Completion)</div></a>
-			</div>
+		<section class="section">
+			<section class="section_title">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</section>
+			<p class="section_text">
+			"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+			</p>
 		</section>
-		<section id="resume_section">
-			<div class="section_text">
-				<a href="Resume.pdf"> Download Resume</a> </br>
-				<a href="CV.pdf"> Download CV </a> 
-			</div>
+		<section class="section">
+			<section class="section_title">1914 translation by H. Rackham</section>
+			<p class="section_text">
+			"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+			</p>
 		</section>
-		
-		<section id="contact_section">
-			<div id="contact_text" class="section_text">
-				<a href="mailto:cameron.cummins@utexas.edu"> cameron.cummins@utexas.edu </a> </br>
-				<a href="https://github.com/AgentOxygen"><img id="github_img" src ="github-mark.svg" alt="My Github Profile"/></a> <a href="https://www.jsg.utexas.edu/student/cameron_cummins/"><img id="ut_logo_img" src ="ut_logo.svg" alt="My UT Profile"/></a>
-				<div id="linkedin_badge" class="badge-base LI-profile-badge" data-locale="en_US" data-size="small" data-theme="light" data-type="VERTICAL" data-vanity="cameron-cummins-5a5930179" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/cameron-cummins-5a5930179?trk=profile-badge"></a></div>
-			</div>
+		<section class="section">
+			<section class="section_title">Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</section>
+			<p class="section_text">
+			"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+			</p>
 		</section>
-		
-		<section id="credits_section">
-			<div id="credits_text">
-				Website design inspired by <a href="https://p5aholic.me/">Keita Yamada</a>
-				</br>
-				Visualization of Dust Aerosol Optical Depth at 550nm over North Atlantic Ocean from <a href="https://ads.atmosphere.copernicus.eu/cdsapp#!/dataset/cams-global-atmospheric-composition-forecasts?tab=overview">CAMS</a>
-			</div>
+		<section class="section">
+			<section class="section_title">1914 translation by H. Rackham</section>
+			<p class="section_text">
+			"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
+			</p>
 		</section>
 		
-		<section id="thesis_section">
-			<div>
-				<button id="thesis_nav_btn" class="btn" onclick="changePage('thesis')"> Thesis Blog </button> 
-				<br>
-				<button id="old_updates_btn" class="btn" autofocus="autofocus" onclick="changeThesisUpdate('index')">See past updates.</button>
-				<embed id="updates_embed" type="text/html" src="thesis_updates/thesis_update_0.html" class="section_text">
-			</div>
-		</section>
-	</div>
-	
-	<script src="vis.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+		</div></div>
+    </body>
+	<script src="index.js"></script>
+	<script src="stripe_anim.js"></script>
 </html>

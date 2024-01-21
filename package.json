@@ -1,0 +1,14 @@
+{
+  "name": "personal_web",
+  "version": "0.0.1",
+  "description": "A new code base for my personal website with better modularity and expandability.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cameron Cummins",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.2.2"
+  }
+}
