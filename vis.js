@@ -3,12 +3,13 @@ const base_url = full_url.split("#")[0];
 const page = full_url.split("#")[1];
 
 function changeThesisUpdate(update_id) {
+	console.log("Changing to thesis_update_" + update_id);
 	switch(update_id) {
 		case 'index':
 			document.getElementById('updates_embed').src = "thesis_updates_index.html";
 			break;
 		default:
-			document.getElementById('updates_embed').src = "thesis_updates_index.html";
+			document.getElementById('updates_embed').src = "thesis_updates/thesis_update_" + update_id + ".html";
 			break;
 	}
 	
@@ -30,7 +31,7 @@ function changePage(page_id) {
 			break;
 		case 'thesis':
 			document.getElementById('thesis_section').style.display = "block";
-			changeThesisUpdate();
+			changeThesisUpdate("1");
 			
 			window.history.pushState({}, "Cameron Cummins", base_url + "#thesis");
 			break;
