@@ -1,1 +1,2 @@
-include: "node_modules/"
+include             : [".htaccess", "node_modules"]
+exclude             : ["Gemfile", "Gemfile.lock", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
