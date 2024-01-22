@@ -24,6 +24,7 @@ anime.timeline()
     duration: 1200,
     delay: (el, i) => 500 + 40 * i
   });
+  
 anime.timeline().add({
     targets: '.title_menu_icon',
     translateX: [40,0],
@@ -34,8 +35,18 @@ anime.timeline().add({
 	delay: (el, i) => 1000 + 30 * i
   });
   
+anime.timeline().add({
+    targets: '.title_sub_menu',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+	delay: (el, i) => 1000 + 30 * i
+  });
+  
   
 // For clicking on the menu buttons
-$(document).on('click', '.title_menu_icon', function(event) {
+$(document).on('click', '.title_sub_menu', function(event) {
     console.log("test");
 });
