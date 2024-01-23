@@ -48,5 +48,5 @@ anime.timeline().add({
   
 // For clicking on the menu buttons
 $(document).on('click', '.title_sub_menu', function(event) {
-    console.log("test");
+    //
 });
